@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #050505;
+  --font-inter: Inter, Arial, sans-serif;
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(238, 232, 221, 0.08), transparent 34rem),
+    #050505;
+  color: #eee8dd;
+  text-rendering: geometricPrecision;
+}
+
+::selection {
+  background: #eee8dd;
+  color: #050505;
+}
+
+img {
+  display: block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  main > section,
+  footer {
+    animation: editorial-rise 700ms ease-out both;
+  }
+
+  main > section:nth-of-type(2) {
+    animation-delay: 90ms;
+  }
+
+  main > section:nth-of-type(3) {
+    animation-delay: 160ms;
+  }
+
+  main > section:nth-of-type(4) {
+    animation-delay: 230ms;
+  }
+}
+
+@keyframes editorial-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
