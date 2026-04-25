@@ -19,11 +19,10 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at 50% -10%, rgba(238, 232, 221, 0.08), transparent 34rem),
-    #050505;
+  background: #050505;
   color: #eee8dd;
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
@@ -33,6 +32,10 @@ body {
 
 img {
   display: block;
+}
+
+a {
+  text-underline-offset: 0.24em;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -4,6 +4,8 @@ out
 dist
 .vercel
 *.log
+.npm-cache
+.npm-global
 .env
 .env.local
 .env.*.local
